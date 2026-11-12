@@ -91,6 +91,8 @@
 /* I2C0_M0, H1 pin 9/7: SCL/SDA for BH1750 and BMP280. */
 &i2c0 {
 	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c0m0_xfer>;
 	clock-frequency = <100000>;
 };
 
